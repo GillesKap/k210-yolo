@@ -1,0 +1,2 @@
+/home/gilles/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DTOOLCHAIN=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin -PROJ=yolo3_frame_test_public_maixpy -G "CodeBlocks - Unix Makefiles" /home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk
+CMake Error: Error processing file: -G

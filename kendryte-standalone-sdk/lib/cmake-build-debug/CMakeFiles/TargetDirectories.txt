@@ -1,0 +1,6 @@
+/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/CMakeFiles/kendryte.dir
+/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/CMakeFiles/rebuild_cache.dir
+/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/CMakeFiles/nncase.dir
+/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/CMakeFiles/edit_cache.dir

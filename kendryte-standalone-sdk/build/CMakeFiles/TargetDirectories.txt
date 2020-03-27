@@ -1,0 +1,9 @@
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/CMakeFiles/rebuild_cache.dir
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/CMakeFiles/facedetect_landmark_example.dir
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/CMakeFiles/edit_cache.dir
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/lib/CMakeFiles/rebuild_cache.dir
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/lib/CMakeFiles/kendryte.dir
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/lib/CMakeFiles/edit_cache.dir
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/lib/nncase/CMakeFiles/rebuild_cache.dir
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/lib/nncase/CMakeFiles/nncase.dir
+/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build/lib/nncase/CMakeFiles/edit_cache.dir

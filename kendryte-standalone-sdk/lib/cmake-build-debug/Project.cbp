@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\nncase\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kendryte">
+				<Option output="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/libkendryte.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include"/>
+					<Add directory="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 kendryte"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kendryte/fast">
+				<Option output="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/libkendryte.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include"/>
+					<Add directory="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 kendryte/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nncase">
+				<Option output="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/libnncase.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/third_party/xtl/include"/>
+					<Add directory="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/nncase/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/Makefile&quot;  VERBOSE=1 nncase"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nncase/fast">
+				<Option output="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/libnncase.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/third_party/xtl/include"/>
+					<Add directory="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/nncase/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/Makefile&quot;  VERBOSE=1 nncase/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/gilles/repos/kendryte-standalone-sdk/lib/cmake-build-debug/nncase/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/crt.S">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/entry.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/entry_user.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/atomic.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/bsp.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/dump.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/encoding.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/entry.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/interrupt.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/platform.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/printf.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/sleep.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/syscalls.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/include/util.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/interrupt.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/locks.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/printf.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/sleep.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/bsp/syscalls.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/aes.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/apu.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/clint.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/dmac.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/dvp.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/fft.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/fpioa.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/gpio.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/gpiohs.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/i2c.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/i2s.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/aes.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/apu.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/clint.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/dmac.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/dvp.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/fft.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/fpioa.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/gpio.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/gpio_common.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/gpiohs.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/i2c.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/i2s.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/io.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/iomem.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/kpu.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/plic.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/pwm.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/rtc.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/sha256.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/spi.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/sysctl.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/timer.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/uart.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/uarths.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/utils.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/include/wdt.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/iomem.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/kpu.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/plic.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/pwm.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/rtc.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/sha256.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/spi.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/sysctl.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/timer.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/uart.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/uarths.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/utils.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/drivers/wdt.c">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/nncase.cpp">
+			<Option target="nncase"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/runtime/cpu/cpu_ops.cpp">
+			<Option target="nncase"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/runtime/interpreter.cpp">
+			<Option target="nncase"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/runtime/k210/interpreter.cpp">
+			<Option target="nncase"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/runtime/k210/k210_ops.cpp">
+			<Option target="nncase"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/runtime/kernel_registry.cpp">
+			<Option target="nncase"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/runtime/neutral/neutral_ops.cpp">
+			<Option target="nncase"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/utils/include/syslog.h">
+			<Option target="kendryte"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/gilles/repos/kendryte-standalone-sdk/lib/nncase/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\nncase\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

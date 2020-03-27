@@ -1,0 +1,30 @@
+/home/gilles/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DTOOLCHAIN=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin -DPROJ=facedetect_landmark_example -G "CodeBlocks - Unix Makefiles" /home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk
+PROJ = facedetect_landmark_example
+-- Check for RISCV toolchain ...
+-- Using /home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin RISCV toolchain
+SOURCE_FILES=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/image_process.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/lcd.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/main.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/nt35310.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/ov2640.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/ov5640.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/region_layer.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/test.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/w25qxx.c;/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/src/facedetect_landmark_example/yolo_region_layer.c
+
+Project: facedetect_landmark_example
+  LIST_FILE=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/cmake/executable.cmake
+  TOOLCHAIN=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin
+  KENDRYTE_IDE=
+  BUILDING_SDK=yes
+
+  CMAKE_BUILD_TYPE=Debug
+  CMAKE_C_COMPILER=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin/riscv64-unknown-elf-gcc
+  CMAKE_CXX_COMPILER=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin/riscv64-unknown-elf-g++
+  CMAKE_LINKER=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin/riscv64-unknown-elf-ld
+  CMAKE_OBJCOPY=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin/riscv64-unknown-elf-objcopy
+  CMAKE_OBJDUMP=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin/riscv64-unknown-elf-objdump
+  CMAKE_MAKE_PROGRAM=/usr/bin/make
+
+  CMAKE_C_FLAGS= -mcmodel=medany -mabi=lp64f -march=rv64imafc -fno-common -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -ffast-math -fno-math-errno -fsingle-precision-constant -Os -ggdb -std=gnu11 -Wno-pointer-to-int-cast -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wno-multichar -Wextra -Werror=frame-larger-than=32768 -Wno-unused-parameter -Wno-sign-compare -Wno-error=missing-braces -Wno-error=return-type -Wno-error=pointer-sign -Wno-missing-braces -Wno-strict-aliasing -Wno-implicit-fallthrough -Wno-missing-field-initializers -Wno-int-to-pointer-cast -Wno-error=comment -Wno-error=logical-not-parentheses -Wno-error=duplicate-decl-specifier -Wno-error=parentheses -Wno-old-style-declaration
+  CMAKE_CXX_FLAGS= -mcmodel=medany -mabi=lp64f -march=rv64imafc -fno-common -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -ffast-math -fno-math-errno -fsingle-precision-constant -Os -ggdb -std=gnu++17 -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wno-multichar -Wextra -Werror=frame-larger-than=32768 -Wno-unused-parameter -Wno-sign-compare -Wno-error=missing-braces -Wno-error=return-type -Wno-error=pointer-sign -Wno-missing-braces -Wno-strict-aliasing -Wno-implicit-fallthrough -Wno-missing-field-initializers -Wno-int-to-pointer-cast -Wno-error=comment -Wno-error=logical-not-parentheses -Wno-error=duplicate-decl-specifier -Wno-error=parentheses
+  LDFLAGS= -nostartfiles -static -Wl,--gc-sections -Wl,-static -Wl,--start-group -Wl,--whole-archive -Wl,--no-whole-archive -Wl,--end-group -Wl,-EL -Wl,--no-relax -T /home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/lds/kendryte.ld
+  CMAKE_BINARY_DIR=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build
+Makefile created.
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/build

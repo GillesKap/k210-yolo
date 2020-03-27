@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="yolo3_frame_test_public_maixpy" targetName="kendryte" />
+      <config projectName="yolo3_frame_test_public_maixpy" targetName="yolo3_frame_test_public_maixpy" />
+      <config projectName="yolo3_frame_test_public_maixpy" targetName="nncase" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DTOOLCHAIN=/home/gilles/repos/K210_Yolo_framework/kendryte-standalone-sdk/toolchain/kendryte-toolchain/bin -DPROJ=yolo3_frame_test_public_maixpy" GENERATION_DIR="build" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ecc42c4-e3a8-453b-ac6b-bd0138eb4578" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cmake/toolchain.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/toolchain.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drivers/dvp.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drivers/dvp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hello_world/main.c" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZFRCxiGttCwBin2glkEwdnNzKF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../kendryte-standalone-sdk/CMakeLists.txt" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RunManager" selected="CMake Application.yolo3_frame_test_public_maixpy">
+    <configuration name="kendryte" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="yolo3_frame_test_public_maixpy" TARGET_NAME="kendryte" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nncase" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="yolo3_frame_test_public_maixpy" TARGET_NAME="nncase" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="yolo3_frame_test_public_maixpy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="yolo3_frame_test_public_maixpy" TARGET_NAME="yolo3_frame_test_public_maixpy" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="yolo3_frame_test_public_maixpy" RUN_TARGET_NAME="yolo3_frame_test_public_maixpy">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.kendryte" />
+      <item itemvalue="CMake Application.nncase" />
+      <item itemvalue="CMake Application.yolo3_frame_test_public_maixpy" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ecc42c4-e3a8-453b-ac6b-bd0138eb4578" name="Default Changelist" comment="" />
+      <created>1584432731162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584432731162</updated>
+      <workItem from="1584432732489" duration="340000" />
+      <workItem from="1584433083791" duration="9151000" />
+      <workItem from="1584449850357" duration="13000" />
+      <workItem from="1584457759713" duration="464000" />
+      <workItem from="1584604793558" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="450" y="209" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584433046746">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="450" y="209" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1584433046746" />
+    <state x="775" y="309" width="426" height="486" key="FileChooserDialogImpl" timestamp="1584458146811">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="775" y="309" width="426" height="486" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584458146811" />
+    <state x="314" y="172" width="1338" height="736" key="SettingsEditor" timestamp="1584457853396">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="314" y="172" width="1338" height="736" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1584457853396" />
+    <state x="602" y="611" key="com.intellij.ide.util.TipDialog" timestamp="1584604804249">
+      <screen x="0" y="376" width="1920" height="704" />
+    </state>
+    <state x="602" y="611" key="com.intellij.ide.util.TipDialog/1920.349.1920.1080/0.376.1920.704@0.376.1920.704" timestamp="1584604804249" />
+    <state x="648" y="379" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1584449850142" />
+  </component>
+</project>

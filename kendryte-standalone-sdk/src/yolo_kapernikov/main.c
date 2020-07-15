@@ -128,8 +128,8 @@ static void drawboxes(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint32
                       float prob, uint32_t *landmark, uint32_t landm_num) {
     if (x1 >= 320) x1= 319;
     if (x2 >= 320) x2= 319;
-    if (y1 >= 224) y1= 223;
-    if (y2 >= 224) y2= 223;
+    if (y1 >= 240) y1= 239;
+    if (y2 >= 240) y2= 239;
 
 #if (CLASS_NUMBER > 1)
     lcd_draw_rectangle(x1, y1, x2, y2, 2, class_lable[class].color);
@@ -169,6 +169,7 @@ void print_boxes(region_layer_t *rl) {
 
         if (prob > threshold) {
             box_t *b= boxes + i;
+            printf("b->w , b->h  = %f,  %f\n", b->w, b->h);
             uint32_t x1= b->x * image_width - (b->w * image_width / 2);
             uint32_t y1= b->y * image_height - (b->h * image_height / 2);
             uint32_t x2= b->x * image_width + (b->w * image_width / 2);
@@ -186,7 +187,7 @@ static int ai_done(void *ctx) {
     return 0;
 }
 
-#define ANCHOR_NUM 3
+#define ANCHOR_NUM 5
 
 static region_layer_t detect_rl0, detect_rl1;
 
@@ -239,19 +240,19 @@ int main(void) {
 
     dvp_set_image_format(DVP_CFG_RGB_FORMAT);
     // set_image_size(width, height)
-    dvp_set_image_size(320, 224);
+    dvp_set_image_size(320, 240);
     ov2640_init();
 
     // initialize memory for KPU (?)
     kpu_image.pixel= 3;
     kpu_image.width= 320;
-    kpu_image.height= 224;
+    kpu_image.height= 240;
     image_init(&kpu_image);
 
     // initialize memory for display image
     display_image.pixel= 2;
     display_image.width= 320;
-    display_image.height= 224;
+    display_image.height= 240;
     image_init(&display_image);
 
     // DVP- Digital Video Port - can forward camera input to both KPU and memory
@@ -282,8 +283,6 @@ int main(void) {
     // will also contain pointers to results of the region layer
     detect_rl0.anchor_number= ANCHOR_NUM;
     detect_rl0.anchor= g_anchor;
-//    detect_rl0.threshold= 0.6;
-//    detect_rl0.nms_value= 0.3;
     detect_rl0.threshold= 0.5;
     detect_rl0.nms_value= 0.2;
     region_layer_init(&detect_rl0, 10, 7, 125, 320, 240);    // region_layer_t *rl, int width, int height, int channels, int origin_width,int origin_height
@@ -333,14 +332,12 @@ int main(void) {
 //        region_layer_run(&detect_rl1, NULL);
 
 
-//        /* run key point detect */
-        printf("detected boxes rl0 --  \n");
-        print_boxes(&detect_rl0);
-//        printf("detected boxes rl1 --  \n");
-//        print_boxes(&detect_rl1);
-        lcd_draw_picture(0, 0, 320, 224,  (uint32_t *)display_image.addr);
 
-        // draw boxes
+        lcd_draw_picture(0, 0, 320, 240,  (uint32_t *)display_image.addr);
+
+//        TODO: printing boxes results in segmentation faults -- figure out why (most likely related to why bounding boxes are not shown correctly)
+//        print_boxes(&detect_rl0);
+
         region_layer_draw_boxes(&detect_rl0, drawboxes);
 //        region_layer_draw_boxes(&detect_rl1, drawboxes);
 

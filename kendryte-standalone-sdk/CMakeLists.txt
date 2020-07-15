@@ -2,7 +2,7 @@
 
 # set this will supress some warnings
 set(BUILDING_SDK "yes" CACHE INTERNAL "")
-set(PROJ "facedetect_landmark_example")
+#set(PROJ "k210")
 # basic config
 if (NOT PROJ)
     get_filename_component(PROJ ${CMAKE_CURRENT_BINARY_DIR} DIRECTORY)

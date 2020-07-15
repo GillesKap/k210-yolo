@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "files": [
+    {
+      "address": 0,
+      "bin": "yolo_kapernikov.bin",
+      "sha256Prefix": true
+    }
+  ]
+}

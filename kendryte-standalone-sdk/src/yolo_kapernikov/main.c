@@ -163,21 +163,27 @@ void print_boxes(region_layer_t *rl) {
     float threshold= rl->threshold;
     box_t *boxes= (box_t *)rl->boxes;
 
+
     for (int i= 0; i < rl->boxes_number; ++i) {
         int class= index_max(rl->probs[i], rl->classes);
+        printf("Class: %i \n\r", class);
         float prob= rl->probs[i][class];
 
         if (prob > threshold) {
             box_t *b= boxes + i;
-            printf("b->w , b->h  = %f,  %f\n", b->w, b->h);
-            uint32_t x1= b->x * image_width - (b->w * image_width / 2);
-            uint32_t y1= b->y * image_height - (b->h * image_height / 2);
-            uint32_t x2= b->x * image_width + (b->w * image_width / 2);
-            uint32_t y2= b->y * image_height + (b->h * image_height / 2);
-            printf("(x1, y1), (x2, y2) -- (%i, %i), (%i, %i)\n", x1, y1, x2, y2);
+            /*
+             * b->x, b->y are the coordinates of the center of the box, expressed as a 'fraction' (in range [0, 1])
+             * analogously, b->w, b->h are the width and height as a 'fraction'. (or at least they should be )
+             * Multiply with image_width, image_height to get corresponding values in terms of pixels
+             */
+            uint32_t x1= b->x * image_width - (b->w * image_width / 20);
+            uint32_t y1= b->y * image_height - (b->h * image_height / 20);
+            uint32_t x2= b->x * image_width + (b->w * image_width / 20);
+            uint32_t y2= b->y * image_height + (b->h * image_height / 20);
+            printf("(x1, y1), (x2, y2) -- (%i, %i), (%i, %i)\n\r", x1, y1, x2, y2);
             printf("class:  ");
             printf(class_lable[i].str);
-            printf("\n");
+            printf("\n\r");
         }
     }
 }
@@ -216,13 +222,13 @@ int main(void) {
      lable_init();
 
 //    Load model from flash memory
-    printf("flash init\n");
+    printf("flash init\n\r");
     w25qxx_init(3, 0);
     w25qxx_enable_quad_mode();
     w25qxx_read_data(0xA00000, model_data, KMODEL_SIZE, W25QXX_QUAD_FAST);
 
     /* LCD init */
-    printf("LCD init\n");
+    printf("LCD init\n\r");
     lcd_init();
 
     lcd_set_direction(DIR_YX_RLDU);
@@ -230,7 +236,7 @@ int main(void) {
     lcd_clear(BLACK);
 
     /* DVP init */
-    printf("DVP init\n");
+    printf("DVP init\n\r");
     dvp_init(8);
     dvp_set_xclk_rate(24000000);
     dvp_enable_burst();
@@ -268,13 +274,13 @@ int main(void) {
     dvp_disable_auto();
 
     /* DVP interrupt config */
-    printf("DVP interrupt config\n");
+    printf("DVP interrupt config\n\r");
     plic_set_priority(IRQN_DVP_INTERRUPT, 1);
     plic_irq_register(IRQN_DVP_INTERRUPT, dvp_irq, NULL);
     plic_irq_enable(IRQN_DVP_INTERRUPT);
 
     if (kpu_load_kmodel(&task, model_data) != 0) {
-        printf("\nmodel init error\n");
+        printf("\n\rmodel init error\n\r");
         while (1) {};
     }
 
@@ -287,17 +293,10 @@ int main(void) {
     detect_rl0.nms_value= 0.2;
     region_layer_init(&detect_rl0, 10, 7, 125, 320, 240);    // region_layer_t *rl, int width, int height, int channels, int origin_width,int origin_height
 
-//    detect_rl1.anchor_number= ANCHOR_NUM;
-//    detect_rl1.anchor= layer1_anchor;
-//    detect_rl1.threshold= 0.6;
-//    detect_rl1.nms_value= 0.3;
-//    region_layer_init(&detect_rl1, 20, 14, 75, 320, 240);
-
-
     /* enable global interrupt */
     sysctl_enable_irq();
     /* system start */
-    printf("System start\n");
+    printf("System start\n\r");
 
     float *output0, *output1;
     size_t output_size0, output_size1;
@@ -324,25 +323,17 @@ int main(void) {
 
         //store model output in output0, output1, and store output size
         kpu_get_output(&task, 0, (uint8_t **)&output0, &output_size0);
-//        kpu_get_output(&task, 1, (uint8_t **)&output1, &output_size1);
 
         detect_rl0.input= output0;
         region_layer_run(&detect_rl0, NULL);
-//        detect_rl1.input= output1;
-//        region_layer_run(&detect_rl1, NULL);
-
 
 
         lcd_draw_picture(0, 0, 320, 240,  (uint32_t *)display_image.addr);
 
-//        TODO: printing boxes results in segmentation faults -- figure out why (most likely related to why bounding boxes are not shown correctly)
-//        print_boxes(&detect_rl0);
-
         region_layer_draw_boxes(&detect_rl0, drawboxes);
-//        region_layer_draw_boxes(&detect_rl1, drawboxes);
 
         end = clock();
         runtime = (double)(end  - start) / CLOCKS_PER_SEC;
-        printf("runtime: %f \n",runtime);
+        printf("runtime: %f \n\r",runtime);
     }
 }

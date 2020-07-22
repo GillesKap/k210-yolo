@@ -389,11 +389,13 @@ void region_layer_draw_boxes(region_layer_t *rl, callback_draw_box callback) {
         float prob= rl->probs[i][class];
 
         if (prob > threshold) {
+        	// image_width is divided by 2*10 = 20.
+        	// The model output is in range [0, 10], when it should be in range[0, 1] (not sure why)
             box_t *b= boxes + i;
-            uint32_t x1= b->x * image_width - (b->w * image_width / 2);
-            uint32_t y1= b->y * image_height - (b->h * image_height / 2);
-            uint32_t x2= b->x * image_width + (b->w * image_width / 2);
-            uint32_t y2= b->y * image_height + (b->h * image_height / 2);
+            uint32_t x1= b->x * image_width - (b->w * image_width / 20);
+            uint32_t y1= b->y * image_height - (b->h * image_height / 20);
+            uint32_t x2= b->x * image_width + (b->w * image_width / 20);
+            uint32_t y2= b->y * image_height + (b->h * image_height / 20);
             callback(x1, y1, x2, y2, class, prob);
         }
     }
